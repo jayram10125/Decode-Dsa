@@ -1,5 +1,5 @@
-// method 2 finding maximum element 
-//find the maximum elements out of all the elements
+//finding minimum elements from the array
+
 #include<iostream>
 #include<climits>
 using namespace std;
@@ -14,14 +14,14 @@ int main()
     {
         cin>>arr[i];
     }
-    int max=INT_MIN;
+    int min=INT_MAX;
     for(int i=0;i<size;i++)
     {
-        if(max<arr[i])
+        if(min>arr[i])
         {
-            max=arr[i];
+            min=arr[i];
         }
     }
-    cout<<"the marimum element is : "<<max;
+    cout<<"the minimum element is : "<<min;
     
-} 
+}
